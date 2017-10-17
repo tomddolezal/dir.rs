@@ -5,6 +5,8 @@ fn main() {
 
     if args.len() > 1 {
         println!("{}", args[1]);
+    } else {
+        println!("{}", env::current_dir().unwrap().display());
     }
 }
 
